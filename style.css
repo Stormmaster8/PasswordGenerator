@@ -91,7 +91,7 @@ input[type="checkbox"] {
 .btn-small {
     width: 2em;
     height: 2em;
-    background-image: url(/images/clipboard\ icon.png);
+    background-image: url("images/clipboard\ icon.png");
     background-size: cover;
     background-color:gold;
     
