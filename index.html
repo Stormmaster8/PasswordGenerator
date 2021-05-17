@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+</head>
+
+
+
+
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <hr>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn btn-small" id="clipboard">
+            </button>
+        </div>
+        <div class="settings">
+         <div class="setting">
+             <label for="length">Select Password Length (6-30 characters)</label>
+             <input type="number" id="length" min="6" max="30" value="6" />
+         </div>   
+         <div class="setting">
+            <label for="uppercase">Check to Include Upper Case Letters</label>
+            <input type="checkbox" id="uppercase" unchecked />
+         </div>
+         <div class="setting">
+            <label for="lowercase">Check to Include Lower Case Letters</label>
+            <input type="checkbox" id="lowercase" unchecked />
+         </div>
+         <div class="setting">
+            <label for="numbers">Check to Include Numbers</label>
+            <input type="checkbox" id="numbers" unchecked />
+         </div>
+         <div class="setting">
+            <label for="symbols">Check to Include Special Characters</label>
+            <input type="checkbox" id="symbols" unchecked />
+         </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+           Click to Generate a Password
+        </button>
+    </div>
+    <script src="javascript.js"></script>
+    <footer class=footer> &copy;2021 All Rights Reserved Debra Malone</footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:antiquewhite;
+    color: rgb(63, 45, 45);
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+p {
+    margin: 5px 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+    font-size:3em;
+}
+
+input[type="number"] {
+    height:3em;
+    width:4em;
+    
+}
+input[type="checkbox"] {
+    
+    height:2em;
+    width:3em;
+}
+
+.container {
+    background-color:rgb(1, 192, 250);
+    box-shadow: 4px 4px 4px 4px rgb(34, 33, 33);
+    box-sizing: content-box;
+    width: 45%;
+    border: solid black 5px;
+    padding: 25px;
+}
+
+.result-container {
+    background-color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 12px 10px;
+    height: 50 px;
+    width: 100%;
+   
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+#clipboard {
+    display: flex;
+    justify-content: right;
+}
+
+.btn {
+    border: solid black 2px;
+    color:rgb(42, 58, 153);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 12px;
+    background-color:rgb(255, 255, 255);
+    transition-duration: 0.5s;   
+    
+}
+ 
+.btn:hover {
+    background-color:darkcyan;
+    box-shadow:rgb(136, 127, 132) 2px 2px 2px 2px;
+    opacity:80%;
+}
+
+
+.btn-small {
+    width: 2em;
+    height: 2em;
+    background-image: url(/images/clipboard\ icon.png);
+    background-size: cover;
+    background-color:gold;
+    
+}
+
+
+.btn-large {
+    display: block;
+    width: 100%;
+    font-kerning: auto;
+    animation-name: generate;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes generate {
+    15% {background-color:rgb(245, 181, 126)}
+    20% {background-color:lightskyblue}
+    25% {background-color:mediumaquamarine}
+    30% {background-color:peachpuff}
+    35% {background-color:pink}
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.footer {
+    padding-top:8em;
+}
+
+@media screen and (max-width: 400px) {
+    .result-container {
+        font-size: 16px;
+    }
+}
+
