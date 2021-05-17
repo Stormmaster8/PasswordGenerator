@@ -6,4 +6,5 @@ uppercase, lowercase, numbers, or symbols. It chooses characters by using random
 The user is able to generate different passwords or sets of random characters as many times as they want.
 The user is also able to copy any generated set to their local clipboard.
 
+https://github.com/Stormmaster8/PasswordGenerator/blob/main/images/PWGENsitePIC.png
 
